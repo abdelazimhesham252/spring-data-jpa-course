@@ -20,16 +20,18 @@ public class StudentConfig {
             );
 
             Student ahmed = new Student(
-                    "Ahmed",
-                    "Ali",
-                    "ahmed.alizzz@amigoscode.edu",
-                    18
+                    "Abdelazim",
+                    "Hesham",
+                    "Abdelazim.Hesham@amigoscode.edu",
+                     30
             );
 
-            System.out.println("Adding maria and ahmed");
+            System.out.println("Adding maria and Abdelazim");
+
             studentRepository.saveAll(List.of(maria, ahmed));
 
             System.out.print("Number of students: ");
+
             System.out.println(studentRepository.count());
 
             studentRepository
